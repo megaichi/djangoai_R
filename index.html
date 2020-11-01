@@ -1,0 +1,19 @@
+
+<div>
+    <h4 class="mt-4 mb-5 border-bottom">車・バイク推定アプリ</h4>
+    <p>画像ファイルを選択して推定ボタンをクリックしてください。</p>
+    <form action="http://127.0.0.1:8000/carbike/predict/" method="post" class="form" enctype="multipart/form-data">
+    <div class="form-group">
+        <div class="custom-file">
+            <input
+            type='file'
+            name="image"
+            />
+            <label class="custom-file-label" for="customFile">
+                推定したいファイルを選択してください。
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">推定する！</button>
+    </form> 
+</div>
